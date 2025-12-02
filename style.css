@@ -1,0 +1,168 @@
+/*  Estilo Geral  */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/*  Cabeçalho */
+header {
+  background-color: #000000;
+  color: white;
+  padding: 20px 10px;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/*  Navegação  */
+nav {
+  background-color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #fe1212f4;
+  border-radius: 4px;
+}
+
+/*  Conteúdo Principal  */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  color: #d32f2f;
+  border-bottom: 2px solid #ffc107;
+  padding-bottom: 5px;
+}
+
+article {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*  Seção de Pizzas  */
+.pizzas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.pizza-item {
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/*  Conteúdo  */
+.content {
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+  display: block;
+}
+
+/*  Botões  */
+button, input[type="submit"] {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #d32f2f;
+}
+
+/*  Formulário  */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+/*  Rodapé  */
+footer {
+  background-color: #f34a4a;
+  color: rgb(255, 246, 246);
+  padding: 15px;
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*  Responsividade  */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .pizzas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    padding: 10px;
+  }
+}
+
+/* Menu */
+#menu {
+  background-color: #fe1212f4;
+}
